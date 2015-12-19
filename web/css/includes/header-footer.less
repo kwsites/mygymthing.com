@@ -1,0 +1,39 @@
+
+body > header, body > footer {
+   height: 50%;
+   position: relative;
+   font-size: 70pt;
+}
+
+body > header {
+   background: @background-color;
+   color: @highlight-color;
+   font-weight: bold;
+
+   &:before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 90%;
+   }
+
+   .header-content {
+      position: absolute;
+      bottom: 0;
+      font-size: 12pt;
+      width: 100%;
+   }
+
+   .header-text {
+      font-size: 70pt;
+   }
+
+   .header-small {
+      font-size: 35pt;
+   }
+}
+
+body > footer {
+   background: @highlight-color;
+   color: @background-color;
+}

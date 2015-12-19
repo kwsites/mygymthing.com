@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        {{>meta}}
+    </head>
+
+    <body>
+        <nav class="social-nav">
+            <ul>
+                {{>social-nav-items}}
+            </ul>
+        </nav>
+        <header>
+            {{#user}} {{>user-home}} {{/user}}
+            {{^user}}<span class="header-text">my gym thing</span>{{/user}}
+        </header>
+        <footer>what's yours?</footer>
+    </body>
+</html>
